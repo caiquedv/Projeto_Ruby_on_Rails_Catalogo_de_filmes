@@ -15,7 +15,8 @@ class MoviesController < ApplicationController
       country: params[:movie][:country],
       duration: params[:movie][:duration],
       director_id: params[:movie][:director_id],
-      genre_id: params[:movie][:genre_id]
+      genre_id: params[:movie][:genre_id],
+      poster: params[:movie][:poster]
     )
                                              
     if @movie.save
@@ -39,7 +40,8 @@ class MoviesController < ApplicationController
       country: params[:movie][:country],
       duration: params[:movie][:duration],
       director_id: params[:movie][:director_id],
-      genre_id: params[:movie][:genre_id]
+      genre_id: params[:movie][:genre_id],
+      poster: params[:movie][:poster]
       )
 
       return redirect_to movie_path(@movie.id)
