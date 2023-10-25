@@ -21,6 +21,8 @@ Bem-vindo ao repositório do Catálogo de Filmes, uma aplicação desenvolvida c
 
 ## Configuração e Instalação
 
+0. É necessário o uso do Imagick
+
 1. Clone este repositório. <br>
 git clone [link-do-repositório]
 
