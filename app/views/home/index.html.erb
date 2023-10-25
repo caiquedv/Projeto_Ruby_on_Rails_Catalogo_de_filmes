@@ -1,0 +1,13 @@
+<h1>Filmes</h1>
+
+<%= button_to 'Cadastrar', new_movie_path, method: :get %>
+
+<br>
+
+<% @movies.each do |movie| %>
+
+<%= link_to movie.title, movie %>
+
+<br>
+
+<% end %>

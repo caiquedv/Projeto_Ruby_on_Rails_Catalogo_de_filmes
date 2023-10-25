@@ -1,0 +1,13 @@
+<h1>Diretores</h1>
+
+<%= button_to 'Cadastrar', new_director_path, method: :get %>
+
+<br>
+
+<% @directors.each do |director| %>
+
+<%= link_to director.name, director %>
+
+<br>
+
+<% end %>

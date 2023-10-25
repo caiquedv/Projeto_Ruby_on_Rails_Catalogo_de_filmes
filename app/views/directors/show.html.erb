@@ -1,0 +1,18 @@
+<h1>Diretor(a)</h1>
+
+<%= button_to 'Editar', edit_director_path, method: :get %>
+
+<dl>
+  <dt>
+		<strong>Nome:</strong> <%= @director.name %>
+	</dt>
+  <dt>
+		<strong>Nacionalidade:</strong> <%= @director.nationality %>
+	</dt>
+	<dt>
+		<strong>Data de Nascimento:</strong> <%= @director.birth_date.strftime("%d/%m/%Y") %>
+	</dt>
+	<dt>
+		<strong>Gênero:</strong> <%= @director.genre.name if @director.genre %>
+	</dt>	
+</dl>

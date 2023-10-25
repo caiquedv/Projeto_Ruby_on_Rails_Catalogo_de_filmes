@@ -1,0 +1,13 @@
+<h1>Gêneros</h1>
+
+<%= button_to 'Cadastrar', new_genre_path, method: :get %>
+
+<br>
+
+<% @genres.each do |genre| %>
+
+<%= link_to genre.name, genre %>
+
+<br>
+
+<% end %>

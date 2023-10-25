@@ -1,0 +1,27 @@
+<h1>Filme</h1>
+
+<%= button_to 'Editar', edit_movie_path(@movie), method: :get %>
+
+<dl>
+  <dt>
+    <strong>Título:</strong> <%= @movie.title %>
+  </dt>
+  <dt>
+    <strong>Ano de Lançamento:</strong> <%= @movie.release_year %>
+  </dt>
+  <dt>
+    <strong>Sinopse:</strong> <%= @movie.synopsis %>
+  </dt>
+  <dt>
+    <strong>País de Origem:</strong> <%= @movie.country %>
+  </dt>
+  <dt>
+    <strong>Duração:</strong> <%= @movie.duration %>
+  </dt>
+  <dt>
+    <strong>Diretor(a):</strong> <%= @movie.director.name if @movie.director %>
+  </dt>
+  <dt>
+    <strong>Gênero:</strong> <%= @movie.genre.name if @movie.genre %>
+  </dt>
+</dl>
